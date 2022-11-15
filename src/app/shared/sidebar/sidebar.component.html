@@ -7,6 +7,7 @@
 		<div >		
 			<a *ngFor="let element of historial"
 					href="#" 
+					(click)="buscar(element)"
 					class="list-group-item list-group-item-action">
 					<!-- pipe para capitalizar la salida poniendo la primera letra en mayúsculas de las palabras-->
 					{{element | titlecase}}
